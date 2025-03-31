@@ -39,9 +39,9 @@ Since the website is static, you don’t need any server setup or complex instal
 
 2. **Navigate to the folder where the project is stored:**
 
-bash
+ ```bash
 cd dekor-tropikal
-
+   ```
 
 3. **Open the index.html file in your web browser:**
 
