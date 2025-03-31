@@ -52,3 +52,16 @@ document.querySelectorAll('.question').forEach(item => {
     parent.classList.toggle('active');
   });
 });
+
+
+
+
+
+
+
+
+
+function toggleAnswer(question) {
+  const faqItem = question.closest('.faq-item');
+  faqItem.classList.toggle('open');
+}
