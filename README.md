@@ -20,6 +20,7 @@ This website is built as a **static** site with HTML, CSS, and JavaScript.
 - **HTML** for the structure of the website
 - **CSS** for styling and responsiveness
 - **JavaScript** for basic interactivity, such as FAQ collapsible sections
+- **PHP** for the contact form
 
 ## Features
 
