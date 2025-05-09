@@ -501,8 +501,8 @@
 
       <button type="submit">Submit</button>
 
-      <div id="form-message" style="display:none; padding:10px; margin-top:10px;"></div>
-    </form>
+      <div id="form-message" style="display:none; margin-top:15px; border-radius:6px; padding:12px; font-weight:500;"></div>
+ </form>
   </div>
 </div>
 
@@ -588,33 +588,6 @@
 
 <!-- AOS JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent reload
-  
-    const form = e.target;
-    const formData = new FormData(form);
-  
-    fetch("contact.php", {
-      method: "POST",
-      body: formData
-    })
-    .then(res => res.text())
-    .then(data => {
-      const msgBox = document.getElementById("form-message");
-      msgBox.style.display = "block";
-      msgBox.innerText = data;
-      msgBox.style.color = data.toLowerCase().includes("sorry") ? "red" : "green";
-      form.reset();
-    })
-    .catch(err => {
-      const msgBox = document.getElementById("form-message");
-      msgBox.style.display = "block";
-      msgBox.innerText = "An error occurred.";
-      msgBox.style.color = "red";
-    });
-  });
-  </script>
 
 
 
@@ -683,7 +656,44 @@
 
 
 
-
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+    
+      const form = e.target;
+      const formData = new FormData(form);
+      const messageBox = document.getElementById("form-message");
+    
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+      })
+        .then(response => response.text().then(text => ({ ok: response.ok, text })))
+        .then(({ ok, text }) => {
+          messageBox.style.display = "block";
+          messageBox.style.backgroundColor = ok ? "#d4edda" : "#f8d7da";
+          messageBox.style.color = ok ? "#155724" : "#721c24";
+          messageBox.style.border = ok ? "1px solid #c3e6cb" : "1px solid #f5c6cb";
+          messageBox.textContent = text;
+    
+          if (ok) {
+            form.reset();
+            setTimeout(() => {
+              messageBox.style.display = "none";
+            }, 5000); // auto-hide success message
+          }
+        })
+        .catch(() => {
+          messageBox.style.display = "block";
+          messageBox.style.backgroundColor = "#f8d7da";
+          messageBox.style.color = "#721c24";
+          messageBox.style.border = "1px solid #f5c6cb";
+          messageBox.textContent = "An error occurred. Please try again later.";
+        });
+    });
+    </script>
+    
+    
 
 
   <script>
