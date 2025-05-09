@@ -1439,22 +1439,32 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
+  background-color: #102312;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.reservation-contact-image {
+.reservation-contact-map {
   flex: 1;
   min-width: 300px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
 }
 
-.reservation-contact-image img {
+.reservation-contact-map iframe {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  min-height: 400px;
+  flex-grow: 1;
+  border: 0;
+  display: block;
 }
 
+/* FORM SECTION */
 .reservation-contact-form {
   flex: 1;
-  background-color: #0b140c;
+  background: linear-gradient(135deg, #1b2e1d, #2e4930, #202f22);
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
@@ -1464,15 +1474,18 @@ body {
 
 .reservation-contact-form h5 {
   font-size: 14px;
-  color: #cccccc;
+  color: #cfcfcf;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.reservation-contact-form h1 {
-  font-size: 32px;
+.reservation-contact-form h2 {
+  font-size: 20px;
+  color: #ffffff;
   margin-bottom: 30px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .reservation-contact-form form {
@@ -1485,21 +1498,30 @@ body {
 .reservation-contact-form textarea {
   padding: 14px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 16px;
   width: 100%;
-  background-color: #1f3521;
-  color: white;
+  color: #2e4731;
+  background-color: white;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.reservation-contact-form input:focus,
+.reservation-contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #c0dbc0;
 }
 
 .reservation-contact-form input::placeholder,
 .reservation-contact-form textarea::placeholder {
-  color: #cccccc;
+  color: #aaaaaa;
 }
 
 .reservation-contact-form textarea {
   resize: vertical;
-  height: 100px;
+  height: 120px;
 }
 
 .reservation-contact-row {
@@ -1515,18 +1537,30 @@ body {
   background-color: #f5f1e8;
   color: #102312;
   border: none;
-  padding: 14px 40px;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: var(--fs-5);
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
   cursor: pointer;
   align-self: flex-start;
-  transition: 0.3s;
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 
 .reservation-contact-form button:hover {
-  background-color: #e0dccd;
+  background-color: #e3e0d3;
+  transform: scale(1.02);
+}
+
+/* Optional: Message after submission */
+#form-message {
+  display: none;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #2e4731;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
 /* Responsive */
@@ -1535,12 +1569,25 @@ body {
     flex-direction: column;
   }
 
+  .reservation-contact-map {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .reservation-contact-map iframe {
+    height: 300px;
+  }
+
   .reservation-contact-form {
     padding: 40px 20px;
   }
 
   .reservation-contact-row {
     flex-direction: column;
+  }
+
+  .reservation-contact-form h2 {
+    font-size: 22px;
   }
 }
 
@@ -1599,165 +1646,150 @@ body {
   }
 }
 
-.my-services-section {
-  padding: 4rem 1rem;
-  text-align: center;
+/* === Services Section Enhanced === */
+/* === Services Section Enhanced === */
+.svx-section {
+  padding: 5rem 1rem;
+  background: linear-gradient(135deg, #1b2e1d, #2e4930, #202f22);
+  color: white;
+  font-family: "Inter", sans-serif;
 }
 
-.services-grid {
-  display: grid;
-  gap: 2rem;
+.svx-container {
   max-width: 1200px;
   margin: 0 auto;
-  grid-template-columns: 1fr;
+  padding: 0 1rem;
 }
 
-@media (min-width: 640px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.svx-section h4.about-intro {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #d0d0d0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.svx-title {
+  font-size: 2.75rem;
+  text-align: center;
+  background: linear-gradient(90deg, #ffffff, #cfcfcf, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3rem;
+  font-weight: 700;
 }
 
-.my-service-card {
-  background: white;
-  padding: 2rem;
+.svx-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* === Card Styling === */
+.svx-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.5rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 10px 30px rgba(0, 0, 0, 0.3);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(40px);
-  animation: fadeInUp 0.6s forwards;
+  animation: svx-fadeup 0.6s ease forwards;
+  width: 100%;
+  max-width: 100%;
 }
 
-.my-service-card:nth-child(2) {
-  animation-delay: 0.15s;
+.svx-card:nth-child(1) {
+  animation-delay: 0.1s;
 }
-
-.my-service-card:nth-child(3) {
+.svx-card:nth-child(2) {
   animation-delay: 0.3s;
 }
-
-.my-service-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+.svx-card:nth-child(3) {
+  animation-delay: 0.5s;
 }
 
-.my-service-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+.svx-card:hover {
+  transform: translateY(-6px) scale(1.015);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-.my-service-card:hover img {
-  transform: scale(1.05);
+/* === Icon Styling === */
+.svx-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #2e4731;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: background 0.3s ease;
 }
 
-.my-service-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.svx-card:hover .svx-icon {
+  background: #3b5f40;
+}
+
+.svx-svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: #ffffff;
+}
+
+/* === Text Styling === */
+.svx-card-title {
+  font-size: 1.35rem;
   font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #f1f1f1;
 }
 
-@keyframes fadeInUp {
+.svx-card-text {
+  font-size: 0.95rem;
+  color: #c2c2c2;
+  line-height: 1.7;
+}
+
+/* === Animation === */
+@keyframes svx-fadeup {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.svx-section {
-  padding: 5rem 1.5rem;
-  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-  color: white;
-  font-family: "Inter", sans-serif;
-}
-.svx-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.svx-title {
-  font-size: 2.5rem;
-  text-align: center;
-  background: linear-gradient(90deg, #ffffff, #aaaaaa, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 4rem;
-  font-weight: 600;
-}
-.svx-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
-.svx-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 1.25rem;
-  padding: 2rem;
-  backdrop-filter: blur(10px);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
-  transition: box-shadow 0.3s ease;
-}
-.svx-card:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-.svx-icon {
-  width: 3rem;
-  height: 3rem;
-  background: #2c2c2c;
-  border-radius: 9999px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-.svx-svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  stroke: white;
-}
-.svx-card-title {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 0.75rem;
-  color: #f5f5f5;
-}
-.svx-card-text {
-  font-size: 0.95rem;
-  color: #bbbbbb;
-  line-height: 1.6;
-}
-@media (prefers-reduced-motion: no-preference) {
+/* === Responsive Tweaks === */
+@media (max-width: 640px) {
+  .svx-section {
+    padding: 3rem 1rem;
+  }
+
+  .svx-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
   .svx-card {
-    transform: translateY(0);
-    animation: svx-fadeup 0.6s ease-out forwards;
-    opacity: 0;
+    padding: 1.5rem;
   }
-  .svx-card:nth-child(1) {
-    animation-delay: 0.1s;
+
+  .svx-card-title {
+    font-size: 1.2rem;
   }
-  .svx-card:nth-child(2) {
-    animation-delay: 0.3s;
-  }
-  .svx-card:nth-child(3) {
-    animation-delay: 0.5s;
-  }
-  @keyframes svx-fadeup {
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+}
+
+#svxintro {
+  font-size: 1.8rem;
+}
+@media (max-width: 640px) {
+  #svxintro {
+    font-size: 1.4rem;
   }
 }

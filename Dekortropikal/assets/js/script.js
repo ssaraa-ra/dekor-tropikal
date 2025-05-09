@@ -84,3 +84,4 @@ $(document).ready(function () {
     $(this).addClass("tab-active").siblings().removeClass("tab-active");
   });
 });
+
