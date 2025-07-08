@@ -29,22 +29,6 @@ This website is built as a **static** site with HTML, CSS, and JavaScript.
 - **Responsive Design**: Optimized for desktop, tablet, and mobile viewing.
 - **Simple Navigation**: Easy-to-use interface for browsing through the gallery and FAQ.
 
-## Setup Instructions
-
-Since the website is static, you don’t need any server setup or complex installation. To run the website locally, just follow these steps:
-
-1. **Clone the repository** (or download the files):
-   ```bash
-   git clone https://github.com/your-username/dekor-tropikal.git
-
-
-2. **Navigate to the folder where the project is stored:**
-
- ```bash
-cd dekor-tropikal
-   ```
-
-3. **Open the index.html file in your web browser:**
 
 Double-click on index.html or open it using any modern web browser (Chrome, Firefox, etc.)
 
