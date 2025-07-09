@@ -2,12 +2,6 @@
 
 Welcome to **Dekor Tropikal**, your go-to destination for high-quality artificial plants. Our website provides a wide range of realistic and low-maintenance plants to decorate your home, office, or any space with a touch of greenery.
 
-## Table of Contents
-
-- [About](#about)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Setup Instructions](#setup-instructions)
 
 ## About
 
