@@ -31,6 +31,11 @@
   <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggbwcIP+ZlTLOw9vJjVoA6OCOmZ7t7N2U4aCW8j4IE2RZCz8FjK3xX" crossorigin="anonymous">
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 
 </head>
 
@@ -107,7 +112,7 @@
           <div class="btn-group" style=" opacity: 0;
           transform: translateY(30px);
           animation: fadeInUp 2s ease-out forwards;">
-            <a class="btn btn-primary" href="#">View Our Catalog</a>
+            <a class="btn btn-primary" href="#gallery">View Our Gallery</a>
             <a class="btn btn-secondary" href='https://www.asteroom.com/pviewer?hideleadgen=0&token=sLfcCB6RxUKBtADbKuMEtg&autorotation=1&fbclid=PAZXh0bgNhZW0CMTEAAaaDOe6EIQZGIBF9Wg1IX4a1Z-A4hbZ4O6Nn414LioUeK1ifSiOkod6QXRg_aem_Nq9c1iCcEffOwid4JAMyKA' target="_blank">View 360° of Our Shop</a>
           </div>
         </div>
@@ -124,26 +129,53 @@
 
 <br>
 
-<section class="about-us" style=" padding-bottom: 50px; padding-top: 20px;" id="about">
-  
+<section class="about-us" style="padding-bottom: 50px; padding-top: 20px;" id="about">
   <!-- Left Side: Text Content -->
-  <div class="about-us-text" data-aos="fade-up" data-aos-duration="2000">
+  <div class="about-us-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
     <h4 class="about-title">ABOUT US</h4>
     <h1 class="about-intro">Crafting Timeless Greenery with Elegance & Precision</h1>
     <p class="about-us-paragraph">
       At Dekor Tropikal, we specialize in luxury artificial botanicals that redefine sophistication. Our meticulously designed plant arrangements blend artistry with innovation, offering a flawless fusion of beauty and functionality. From bespoke indoor greenery to statement outdoor installations, we curate premium artificial plants that enhance upscale interiors, corporate spaces, and exclusive events—effortlessly elevating every environment.
-    </p> 
-
-
+    </p>
   </div>
 
   <!-- Right Side: Image Content -->
-  <div class="about-us-image" data-aos="fade-up" data-aos-duration="2500">
-    <img src="https://lh3.googleusercontent.com/p/AF1QipMTB8DbPJFE-YlcsEVFrv-ZzXT0bDA-vnRAjg-S=s680-w680-h510" alt="About Me Photo" class="about-us-img">
+  <div class="about-us-image" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    <img src="./assets/images/image2.jpg" 
+         alt="About Dekor Tropikal" class="about-us-img">
+  </div>
+</section>
+
+<!-- Second Section: Mission with Flipped Sides -->
+<section class="about-us" id="mission">
+  <!-- Left Side: Image Content -->
+  <div class="about-us-image" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    <img src="./assets/images/image20.jpg" 
+         alt="Our Mission" class="about-us-img" />
+  </div>
+
+  <!-- Right Side: Text Content -->
+  <div class="about-us-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+    <h4 class="about-title">OUR MISSION</h4>
+    <h1 class="about-intro">Redefining Spaces with Lasting Green Luxury</h1>
+    <p class="about-us-paragraph">
+      Our mission is to bring the beauty of nature into every space without compromise. By combining cutting-edge materials with handcrafted design, we create lifelike artificial plants that require zero maintenance yet offer endless appeal. Whether it’s transforming a luxury hotel lobby, elevating a corporate office, or adding vibrancy to private residences, we deliver sustainable, premium greenery that stands the test of time.
+    </p>
   </div>
 </section>
 
 
+
+
+
+
+
+
+
+
+
+
+<br><br>
 
 <section class="svx-section" data-aos="fade-up">
   <div class="svx-container" data-aos="fade-up" data-aos-delay="100">
@@ -204,43 +236,26 @@
 
 
 
-<!-- 
-<section class="hero-banner1">
-  <div class="background-image1"></div> Background image div 
-  <h1 class="banner-text1">Transform Your Space with Lush Greenery</h1>
-  <p class="banner-paragraph1">
-    Breathe new life into any room with our premium selection of artificial plants. From elegant ferns to vibrant flowers, our high-quality, maintenance-free plants offer all the beauty of nature without the hassle. </p>
-</section> -->
 
 
+<br><br><br>
+<section class="video-section" data-aos="fade-up" data-aos-duration="1000">
+  <h4 class="about-title" style="text-align: center;" data-aos="fade-down" data-aos-delay="100">
+    Elevating Spaces with Lifelike Plants
+  </h4>
 
-<!--
+  <p class="about-us-paragraph" style="text-align: center;" data-aos="fade-up" data-aos-delay="200">
+    Discover how our expertly crafted artificial plants enhance any room with natural beauty, no upkeep needed.
+  </p> 
 
-<section class="my-services-section" style="background-color: var(--dark);">
-  <h4 class="about-title">SERVICES WE PROVIDE</h4>
-  <h1 class="about-intro">blah blah blah</h1>
-  <div class="services-grid">
-    <div class="my-service-card">
-      <img src="./assets/images/hero.jpg" alt="Custom Plant Design">
-      <h3>Custom Plant Design</h3>
-      <p>We create bespoke artificial plant arrangements to complement your interior aesthetics.</p>
-    </div>
-    <div class="my-service-card">
-      <img src="https://images.unsplash.com/photo-1603787081203-9ca387d3c28e?auto=format&fit=crop&w=600&q=80" alt="Corporate Plant Solutions">
-      <h3>Corporate Plant Solutions</h3>
-      <p>Elevate workspaces with zero-maintenance greenery designed for corporate environments.</p>
-    </div>
-    <div class="my-service-card">
-      <img src="https://images.unsplash.com/photo-1609946897917-05798a1c1efb?auto=format&fit=crop&w=600&q=80" alt="Installation & Maintenance">
-      <h3>Installation & Maintenance</h3>
-      <p>Professional installation and ongoing care services to keep your artificial plants looking fresh.</p>
-    </div>
+  <div class="video-container" data-aos="zoom-in" data-aos-delay="700">
+    <video class="video-background" autoplay muted loop>
+      <source src="./assets/images/dekortropikalvideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
   </div>
-</section> -->
-
-
-
-
+</section> <br><br>
 
 
 
@@ -257,211 +272,301 @@
   </div>
 
 
+  
 
-  <!-- Category Filter -->
-  <div class="category-buttons"  data-aos="fade-up"  data-aos-duration="2000">
-    <button class="filter-button" data-category="trees">Artificial Trees</button>
-    <button class="filter-button" data-category="flowers">Artificial Flowers</button>
-   <button class="filter-button" data-category="succulents">Succulents & Cacti</button>
-    <button class="filter-button" data-category="hanging">Hanging Plants</button>
-    <button class="filter-button" data-category="floor">Floor Plants</button>
-    <button class="filter-button" data-category="tabletop">Tabletop Plants</button>
-    <button class="filter-button" data-category="seasonal">Seasonal Collections</button>
-    <button class="filter-button" data-category="all">All</button>
-    
-  </div>
+  <section class="ultra-gallery-section">
+    <div class="ultra-gallery">
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800">
+        <img src="./assets/images/image1.jpg" alt="Gallery Image 1">
+      </div>
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+        <img src="./assets/images/image10.jpg" alt="Gallery Image 2">
+      </div>
 
-  <!-- Gallery Grid 
-  <div class="gallery-grid" id="gallery-grid"  data-aos="fade-up"  data-aos-duration="2000" >
-      <div class="gallery-item" data-category="bride-groom">
-          <img src="https://i.pinimg.com/736x/8a/be/96/8abe9628259ac2874eb1b69d9ed23376.jpg" >
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+        <img src="./assets/images/image9.jpg" alt="Gallery Image 4">
       </div>
-     
-      <div class="gallery-item" data-category="bridesmaids">
-          <img src="https://i.pinimg.com/736x/ef/be/e9/efbee9342cc9efdc9f03720726d183ae.jpg">
+
+
+
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800">
+        <img src="./assets/images/image16.webp" alt="Gallery Image 1">
       </div>
-      <div class="gallery-item" data-category="details">
-          <img src="https://i.pinimg.com/736x/b0/d8/a8/b0d8a81ccabf6b6d913943ca5729739b.jpg" >
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+        <img src="./assets/images/image11.jpg" alt="Gallery Image 2">
       </div>
-      <div class="gallery-item" data-category="bride-solo">
-          <img src="https://i.pinimg.com/736x/71/84/cd/7184cd23049a85c76f554c00431ab622.jpg">
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+        <img src="./assets/images/image4.jpg" alt="Gallery Image 3">
       </div>
-      <div class="gallery-item" data-category="bride-groom">
-        <img src="https://i.pinimg.com/736x/57/27/e9/5727e9a889fdcf2c339a11a2d1c3870c.jpg">
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+        <img src="./assets/images/image12.jpg" alt="Gallery Image 4">
+      </div>
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+        <img src="./assets/images/atv.heic" alt="Gallery Image 5">
+      </div>
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+        <img src="./assets/images/image17.webp" alt="Gallery Image 6">
+      </div>
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+        <img src="./assets/images/image14.jpg" alt="Gallery Image 6">
+      </div>
+
+      <div class="ultra-gallery-item" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500">
+        <img src="./assets/images/image13.jpg" alt="Gallery Image 6">
+      </div>
     </div>
-    <div class="gallery-item" data-category="bride-groom">
-      <img src="https://i.pinimg.com/736x/c7/41/c2/c741c258c04071ce12f7fc99f8d7ce2b.jpg" >
-  </div>
+  </section>
+  
 
 
 
-  <div class="gallery-item" data-category="bride-solo">
-    <img src="https://i.pinimg.com/736x/71/84/cd/7184cd23049a85c76f554c00431ab622.jpg">
-</div>
-<div class="gallery-item" data-category="bride-groom">
-  <img src="https://i.pinimg.com/736x/57/27/e9/5727e9a889fdcf2c339a11a2d1c3870c.jpg">
-</div>
-<div class="gallery-item" data-category="bride-groom">
-<img src="https://i.pinimg.com/736x/c7/41/c2/c741c258c04071ce12f7fc99f8d7ce2b.jpg" >
-</div>
-
-
-      
-  </div>
-
--->
-
-    <div class="view-more-button" id="viewMoreBtn">
-      View More
-    </div>
-
-
-
-
-
-</div> 
 </div> 
 
 <br>
 
-<section class="hero-banner">
-  <div class="background-image"></div> <!-- Background image div -->
-  <h1 class="banner-text">Bring Nature Indoors Without the Work</h1>
-  <p class="banner-paragraph">Discover the convenience of realistic artificial plants that add a touch of nature to any space. 
-  </p>
-</section>
 
-<br><br>
-<section class="video-section">
-  <h4 class="about-title" style="text-align: center;">
-    Elevating Spaces with Lifelike Plants
-  </h4>
-  <p class="about-us-paragraph" style="text-align: center;">
-    Discover how our expertly crafted artificial plants enhance any room with natural beauty, no upkeep needed.
-  </p>
 
-  <div class="video-container">
-    <video class="video-background" autoplay muted loop>
-      <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
-  </div>
-</section>
+
+
 
 
 
 
 <br>
+<!--
 <section class="hero-banner1">
   <div class="background-image1"></div> Background image div 
   <h1 class="banner-text1">Transform Your Space with Lush Greenery</h1>
   <p class="banner-paragraph1">
     Breathe new life into any room with our premium selection of artificial plants. From elegant ferns to vibrant flowers, our high-quality, maintenance-free plants offer all the beauty of nature without the hassle. </p>
-</section><br>
+</section><br>-->
 
 
-<section class="faq-section" id="faq">
-  <h4 class="about-title" style="text-align: center;">
+
+<br><br>
+<section class="testimonials" data-aos="fade-up" data-aos-duration="800">
+  <h4 
+    class="about-title" 
+    style="text-align: center; color: white; font-size: 1.2rem;" 
+    data-aos="fade-down" 
+    data-aos-duration="600"
+  >
+    Testimonials
+  </h4>
+  
+  <h1 
+    class="about-intro" 
+    style="text-align: center; color: white; font-size: 1.5rem;" 
+    data-aos="fade-down" 
+    data-aos-delay="150"
+    data-aos-duration="600"
+  >
+    What Our Satisfied Clients Say
+  </h1>
+
+  <div class="testimonials" data-aos="zoom-in-up" data-aos-delay="200">
+    <div class="container">
+      <div class="testimonials-content">
+        <div class="swiper testimonials-slider js-testimonials-slider">
+          <div class="swiper-wrapper">
+            
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide testimonials-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="info">
+                <img src="./assets/images/profile.jpg" alt="image">
+                <div class="text-box">
+                  <h3 class="name">Endrit Berisha</h3>
+                </div>
+              </div>
+              <p>I couldn’t be happier with the results. The team was attentive, friendly, and delivered exactly what I was looking for.</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide testimonials-item" data-aos="fade-up" data-aos-delay="150">
+              <div class="info">
+                <img src="./assets/images/profile.jpg" alt="image">
+                <div class="text-box">
+                  <h3 class="name">Rina Shabani</h3>
+                </div>
+              </div>
+              <p>I was blown away by the attention to detail. They went above and beyond to make sure everything was perfect.</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide testimonials-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="info">
+                <img src="./assets/images/profile.jpg" alt="image">
+                <div class="text-box">
+                  <h3 class="name">Erza Hoxha</h3>
+                </div>
+              </div>
+              <p>The level of professionalism is unmatched. From start to finish, everything was handled with care and precision. I’m very satisfied with the results.</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide testimonials-item" data-aos="fade-up" data-aos-delay="250">
+              <div class="info">
+                <img src="./assets/images/profile.jpg" alt="image">
+                <div class="text-box">
+                  <h3 class="name">Besnik Gashi</h3>
+                </div>
+              </div>
+              <p>Fantastic experience! They understood exactly what I needed and delivered beyond my expectations. Will definitely work with them again.</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="swiper-slide testimonials-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="info">
+                <img src="./assets/images/profile.jpg" alt="image">
+                <div class="text-box">
+                  <h3 class="name">Armend Krasniqi</h3>
+                </div>
+              </div>
+              <p>Simply perfect. Every detail was carefully thought out, and the final result was stunning. Thank you for the great work!</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination js-testimonials-pagination" data-aos="fade-up" data-aos-delay="400"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<br><br>
+<section class="faq-section" id="faq" data-aos="fade-up" data-aos-duration="1000">
+  <h4 class="about-title" style="text-align: center;" data-aos="fade-down" data-aos-delay="100">
     FREQUENTLY ASKED QUESTIONS
   </h4>
-  <h1 class="about-intro" style="text-align: center;">
+  <h1 class="about-intro" style="text-align: center;" data-aos="fade-up" data-aos-delay="200">
     Need Help?
   </h1>
-  <p class="about-us-paragraph" style="text-align: center;">
+  <p class="about-us-paragraph" style="text-align: center;" data-aos="fade-up" data-aos-delay="300">
     Find answers to the most common questions below. If you can't find what you're looking for, feel free to contact us.
   </p>
+
   <div class="faq-container">
-    <div class="faq-item">
+    
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
       <div class="faq-question" onclick="toggleAnswer(this)">
         <span class="question">What materials are your artificial plants made from?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>Our artificial plants are made from high-quality materials such as silk, plastic, and polyurethane, which are designed to look as realistic as possible while being durable and low-maintenance.</p>
+        <p>Our artificial plants are made from premium silk, plastic, and polyurethane materials that closely mimic the look and texture of real plants while being long-lasting and low-maintenance.</p>
       </div>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+      <div class="faq-question" onclick="toggleAnswer(this)">
+        <span class="question">Do you offer decoration services for events or offices?</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, we provide professional decoration services for events, offices, and commercial spaces. Our team can design and install artificial plant arrangements tailored to your needs.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
       <div class="faq-question" onclick="toggleAnswer(this)">
         <span class="question">Are your artificial plants safe for pets and children?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>Yes, our artificial plants are safe for both pets and children. They do not contain any toxic materials, but as with any decorative item, we recommend supervision to avoid any accidents.</p>
+        <p>Yes, our products are non-toxic and safe for pets and children. We recommend placing them in safe spots to avoid any accidental tipping or chewing by pets.</p>
       </div>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
       <div class="faq-question" onclick="toggleAnswer(this)">
-        <span class="question">Can I use artificial plants outdoors?</span>
+        <span class="question">Can artificial plants be used outdoors?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>Some of our artificial plants are designed for indoor use only, while others are suitable for outdoor use. Look for products labeled as "UV-resistant" for outdoor applications. Always check the product description for specific guidelines.</p>
+        <p>We offer outdoor-friendly artificial plants that are UV-resistant and weatherproof. Please check the product description to ensure it’s suitable for outdoor use.</p>
       </div>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
       <div class="faq-question" onclick="toggleAnswer(this)">
-        <span class="question">How do I care for my artificial plants?</span>
+        <span class="question">Do you provide custom plant arrangements?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>Artificial plants require minimal care. Simply dust them regularly using a soft cloth or brush. For deeper cleaning, wipe with a damp cloth. Keep them out of direct sunlight to avoid fading.</p>
+        <p>Yes, we can create custom plant arrangements for homes, offices, and events. Contact our team with your design preferences, and we’ll bring your vision to life.</p>
       </div>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
       <div class="faq-question" onclick="toggleAnswer(this)">
-        <span class="question">Do your plants come in different sizes?</span>
+        <span class="question">How do I clean and maintain artificial plants?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>Yes, we offer a wide variety of artificial plants in different sizes, from small desk plants to large floor-standing trees. Please check the product specifications to find the perfect size for your space.</p>
+        <p>Simply dust your artificial plants regularly with a soft cloth or feather duster. For deeper cleaning, use a damp cloth or gentle soap solution. Avoid harsh chemicals to prevent damage.</p>
       </div>
     </div>
 
-    <div class="faq-item">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
       <div class="faq-question" onclick="toggleAnswer(this)">
-        <span class="question">Are your artificial plants customizable?</span>
+        <span class="question">Can I rent artificial plants for events?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>While we do not offer custom designs for individual plants, we do offer a wide range of plants that can be paired and arranged in many ways. If you have a specific need, feel free to contact us, and we will do our best to help.</p>
+        <p>Yes, we offer artificial plant rentals for weddings, parties, corporate events, and exhibitions. Our rental service includes delivery, setup, and collection after your event.</p>
       </div>
     </div>
 
-
-    <div class="faq-item">
+    <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
       <div class="faq-question" onclick="toggleAnswer(this)">
-        <span class="question">Do your plants come in different sizes?</span>
+        <span class="question">Do your artificial plants look realistic?</span>
         <span class="toggle-icon">+</span>
       </div>
       <div class="faq-answer">
-        <p>Yes, we offer a wide variety of artificial plants in different sizes, from small desk plants to large floor-standing trees. Please check the product specifications to find the perfect size for your space.</p>
+        <p>Absolutely! Our plants are designed with fine details, natural textures, and vibrant colors to make them look as close to real plants as possible — many clients say they can’t tell the difference.</p>
       </div>
     </div>
-
-
-    <div class="faq-item">
-      <div class="faq-question" onclick="toggleAnswer(this)">
-        <span class="question">Do your plants come in different sizes?</span>
-        <span class="toggle-icon">+</span>
-      </div>
-      <div class="faq-answer">
-        <p>Yes, we offer a wide variety of artificial plants in different sizes, from small desk plants to large floor-standing trees. Please check the product specifications to find the perfect size for your space.</p>
-      </div>
-    </div>
-
-
-
 
   </div>
-
-
-
-  
 </section>
 
 
@@ -587,6 +692,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.js-testimonials-slider', {
+    grabCursor: true,
+    spaceBetween:30,
+    pagination:{
+      el: '.js-testimonials-pagination',
+      clicable: true
+    },
+    breakpoints:{
+      767:{
+        slidesPerView:2
+      }
+    }
+  });
+</script>
 
 
 
